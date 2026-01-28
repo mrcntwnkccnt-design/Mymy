@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Login"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <LinearLayout
+        android:id="@+id/signupContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="text"
+            android:hint="Username"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Create Account"
+        android:textSize="16sp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/primary" />
+
+</LinearLayout>

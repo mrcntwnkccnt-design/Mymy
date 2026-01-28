@@ -1,0 +1,4 @@
+-keep class com.google.firebase.** { *; }
+-keepclassmembers class com.example.androidmessenger.data.models.** { *; }
+-keepclassmembers class com.example.androidmessenger.data.repository.** { *; }
+-dontwarn com.google.firebase.**
